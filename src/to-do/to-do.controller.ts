@@ -32,7 +32,9 @@ export class ToDoController {
   @Post()
   CreateToDO(@Body() createToDoDto: CreateToDoDto) {
     return {
+
         name: createToDoDto.name,
+        task: createToDoDto.task
     };
   }
   //PUT /todo/:id --> {...}
